@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id ="title">What do? I do! You do! WE all do</header>
+    <div class = "Main">
+      <nav>
+        <div id ="info">
+          
+        </div>
+        <div class = "Projects">
+          <h3>Projects</h3>
+          <div>
+            <div id = "projects"></div>
+            <form hidden id ="project_form">
+              <input id = "project_insert" type ="text" placeholder = "Project name">
+              <button id ="project_add">Add</button>
+              <button id ="project_cancel">Cancel</button>
+            </form>
+            <button id = "add">
+              Add project
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id ="content">
+        <header id ="projectName">Test</header>
+        <div id ="tasks">
+          
+        </div>
+        <div id = "myModal" class = "modal">
+          <div id = "modalContent" >
+          
+          </div>
+        </div>
+        <form hidden id ="task_form">
+          <li>
+          <input id = "title_insert" type = "text" placeholder ="Title">
+          </li>
+          <li>
+          <input id = "description_insert" type = "text" placeholder ="Description">
+          </li>
+          <li>
+          <input id = "date_insert" type = "date" placeholder="Date">
+          </li>
+          <li>
+            <input id ="priority" type ="checkbox">
+            <label >High Priority</label>
+          </li>
+          <li id = "task_insert">
+          </li>
+        </form>
+        <div id = "taskAdd">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

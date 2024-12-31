@@ -1,0 +1,158 @@
+.Main{
+    display: flex;
+    flex-direction: row;
+    
+}
+body{
+    background-color:darkslateblue;
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+nav{
+    padding-right: 40px;
+}
+#info * {
+    display: flex;
+    font-size: 20px;
+    margin:15px;
+    background-color:orchid;
+    width:200px;
+    align-items: center;
+    justify-content: center;
+}
+#info *:hover{
+    background-color: chocolate;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-content:space-between ;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+#projectSideNames{
+    display: flex;
+    min-width: 150px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+}
+#projectSideNames:hover{
+    background-color: chocolate;
+}
+.project button{
+    border: none;
+    width: 130px;
+    margin-left: 20px;
+    height: 35px;
+    background-color: chartreuse;
+}
+.project button:hover{
+    background-color: chocolate;
+}
+#add{
+    font-size: 20px;
+    border: none;
+    width:130px;
+    background-color: cornflowerblue;
+}
+#add:hover{
+    background-color: chocolate;
+}
+#project_form *{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#project_form button{
+    font-size: 20px;
+    border: none;
+    background-color: aqua;
+}
+#project_form button:hover{
+    background-color: chocolate;
+}
+#project_insert{
+    font-size: 20px;
+    max-width: 150px;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding:10px 20px;
+    margin:10px 10px;
+    border: inset black;
+    list-style: none;
+}
+#projectName{
+    background-color: cadetblue;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#content{
+    background-color:grey;
+    /* min-height: 90vh; */
+    flex: 1;
+    padding:40px 50px;
+}
+#taskAdd{
+    
+    font-size: 30px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  #modalContent {
+    background-color: #228080;
+    border: 1px solid rgb(71, 19, 95);
+    min-width: 600px;
+    min-height: 500px;
+    border-radius: 5px;
+  }
+  #modalForm{
+    display:flex;
+    flex-direction: column;
+  }
+  #projectName{
+    max-width: 500px;
+    min-width:max-content;
+  }
+  #tasks{
+    max-width: 500px;
+    min-width: max-content;
+  }  
+  #tasks li{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+  }
+  #tasks li button{
+    border:none;
+    min-width: 80px;
+    background-color: brown;
+  }
+  #tasks li button:hover{
+    background-color: chocolate;
+  }
