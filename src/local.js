@@ -8,7 +8,9 @@ function updateLS(list){
 
 function projectListRetrieval(){
     let retString = localStorage.getItem("ProjectList");
-    
+    if (retString === null){
+        return [];
+    }
     retString  = JSON.parse(retString);
     let properProjectList = projectObjectConvert(retString);
     return properProjectList;
